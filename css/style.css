@@ -1,0 +1,28 @@
+#nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: none;
+    transition: all 300ms ease;
+    background: transparent;
+}
+
+#nav.active {
+    background: transparent;
+    background-color: white;
+    color: black;
+}
+
+#nav:hover {
+    background-color: white;
+    color: black;
+}
+
+#header_content{
+  padding: 8.5rem 2rem 4rem;
+}
+
+#Aboutme, #ARCHIVING {
+  padding: 64px 32px;
+}
