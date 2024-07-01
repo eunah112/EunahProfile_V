@@ -26,3 +26,9 @@
 #Aboutme, #ARCHIVING {
   padding: 64px 32px;
 }
+
+.nav_btn:hover {
+  text-decoration-line: underline;
+  text-underline-offset: 8px;
+  text-decoration-thickness: 1px;
+}
