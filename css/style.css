@@ -1,25 +1,57 @@
-#nav {
+@media (max-width:800px) {
+  #nav {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: none;
-    transition: all 300ms ease;
-    background: transparent;
+    background-color: white; /*이거 왜 안먹니*/
+    color: black;
+  }
+
+  #nav_menu{
+    display: none;
+  }
+
+  #hamburger_icon{
+    display: block;
+  }
+  
+  .hamburger_menu {
+    display: block;
+  }
 }
 
-#nav.active {
-    background: transparent;
-    background-color: white;
-    color: black;
+.hidden {
+  display: none;
+}
+
+#nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: none;
+  transition: all 300ms ease;
+  background: transparent;
 }
 
 #nav:hover {
-    background-color: white;
-    color: black;
+  background-color: white;
+  color: black;
 }
 
-#header_content{
+#hamburger_menu {
+  width: 100%;
+  background-color: white;
+  z-index: 1000;
+}
+
+#hamburger_menu.active {
+  display: flex; /* 활성화 시 flex로 표시 */
+}
+
+
+#header{
   padding: 8.5rem 2rem 4rem;
 }
 
