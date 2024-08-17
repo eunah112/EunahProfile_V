@@ -8,6 +8,7 @@
 		/>
 		<title>REA's Portfolio</title>
 		<script src="https://cdn.tailwindcss.com"></script>
+		<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 		<link
 			rel="preconnect"
 			href="https://fonts.googleapis.com"
@@ -25,7 +26,17 @@
 		<link rel="stylesheet" href="/css/font.css" />
 		<script src="/js/header.js" defer></script>
 	</head>
-	<body class="m-0 p-0">
+	<body class="noto-sans-light m-0 p-0">
+		<div
+			id="hamburger_menu"
+			class="hidden relative w-full flex flex-col items-center justify-center bg-white text-black my-[88px] z-10"
+		>
+			<span class="py-2">About me</span>
+			<span class="py-2">Skills</span>
+			<span class="py-2">Archiving</span>
+			<span class="py-2">Projects</span>
+			<span class="py-2">Career</span>
+		</div>
 		<div
 			class="bg-[url('./img/Head_Bg.jpg')] bg-cover bg-center text-white my-0 mx-auto"
 		>
@@ -69,22 +80,12 @@
 					/>
 				</button>
 			</nav>
-			<div
-				id="hamburger_menu"
-				class="hidden relative w-full flex flex-col items-center justify-center bg-white text-black my-[88px] z-10"
-			>
-				<span class="py-2">About me</span>
-				<span class="py-2">Skills</span>
-				<span class="py-2">Archiving</span>
-				<span class="py-2">Projects</span>
-				<span class="py-2">Career</span>
-			</div>
 			<header
 				id="header"
 				class="flex flex-col items-center"
 			>
 				<div
-					class="noto-sans-ExtraBold flex flex-col items-center text-[40px]"
+					class="noto-sans-semibold flex flex-col items-center text-[40px]"
 				>
 					<span>- 노은아 -</span>
 					<span>프론트 엔드 개발자 포트폴리오</span>
@@ -101,11 +102,12 @@
 						노은아입니다.</span
 					>
 				</div>
-				<button
-					class="noto-sans-Regular w-[150px] h-[50px] bg-[#9cb4d4] rounded-[30px] text-center"
+				<a
+					href="#Aboutme"
+					class="flex items-center justify-center noto-sans-Regular w-[150px] h-[50px] bg-[#9cb4d4] rounded-[30px] text-center"
 				>
 					더 알아보기 ↓
-				</button>
+				</a>
 			</header>
 		</div>
 
@@ -225,8 +227,8 @@
 				<div class="flex items-center mb-[60px]">
 					<img
 						id="link"
-						class="w-[30px] h-[30px] mr-[10px] cursor-pointer"
-						src="/img/link-45deg.svg"
+						class="w-[40px] mr-[10px] cursor-pointer"
+						src="/img/Link.png"
 						alt=""
 					/>
 					<div class="title text-white text-[40px]">
@@ -235,31 +237,74 @@
 				</div>
 				<div class="grid grid-cols-1 lg:grid-cols-2">
 					<div
-						class="w-[400px] h-[300px] bg-white rounded-[10px] mx-[20px] drop-shadow-2xl"
+						class="filter-white flex flex-col items-start w-[400px] bg-white rounded-[10px] p-[30px] mx-[60px]"
 					>
 						<img
-							class="w-[100px]"
+							class="w-[170px]"
 							src="/img/github.png"
 							alt=""
 						/>
-						<a href="https://github.com/eunah112"
-							>https://github.com/eunah112</a
+						<a
+							class="a text-[#258ddb] my-[10px]"
+							href="https://github.com/eunah112"
+							>github.com/eunah112</a
 						>
+						<span class="text-[18px]"
+							><b class="noto-sans-semibold text-[#444444]"
+								>소스 코드 저장소</b
+							>
+							입니다.</span
+						>
+						<ul class="mt-[10px]">
+							<li class="py-[3px]">프로젝트 소스 코드</li>
+							<li class="py-[3px]">
+								혼자서 코딩 연습을 위해 끄적인 소스 코드
+							</li>
+							<li class="py-[3px]">
+								수강한 수업들의 코딩 과제 소스 코드
+							</li>
+						</ul>
 					</div>
 					<div
-						class="w-[400px] h-[300px] bg-white rounded-[10px] mx-[20px] drop-shadow-2xl"
+						class="filter-white flex flex-col items-start w-[400px] bg-white rounded-[10px] p-[30px] mx-[60px]"
 					>
 						<img
-							class="w-[100px]"
-							src="/img/github.png"
+							class="w-[170px] h-[37px]"
+							src="/img/velogg.svg"
 							alt=""
 						/>
-						<a href="https://github.com/eunah112"
-							>https://github.com/eunah112</a
+						<a
+							class="a text-[#258ddb] my-[10px]"
+							href="https://velog.io/@eunah112/posts"
+							>velog.io/@eunah112/posts</a
 						>
+						<span class="text-[18px]"
+							><b class="noto-sans-semibold text-[#444444]"
+								>공부 및 지식 공유 목적의 블로그</b
+							>
+							입니다.</span
+						>
+						<ul class="mt-[10px]">
+							<li class="py-[3px]">
+								공부한 것을 진정한 나의 것으로 만들기 위한
+								기록
+							</li>
+							<li class="py-[3px]">
+								개발자의 길을 걸으며 공부한 개발 관련 지식
+								정리
+							</li>
+							<li class="py-[3px]">
+								전공 수업들의 내용 복습 겸 정리
+							</li>
+						</ul>
 					</div>
 				</div>
 			</section>
 		</main>
+		<footer
+			class="flex flex-col items-center bg-white py-[40px]"
+		>
+			<div>© 2024. Roh Eun Ah. All rights reserved.</div>
+		</footer>
 	</body>
 </html>
